@@ -1,0 +1,26 @@
+div{
+    text-align: center;
+    align-content: center;
+}
+.drop-downs{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 2rem 2rem;
+}
+button{
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(31, 107, 248);
+    border: rgb(30, 32, 141);
+    color: white;
+    font-size: large;
+    height: 2rem;
+    width: 8rem;
+  }
+  h3{
+      text-decoration: underline;
+  }
