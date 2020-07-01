@@ -25,10 +25,8 @@ class Form extends Component{
         const fname = this.state.fname;
         const lname = this.state.lname;
         if(fname !==' ' && lname !== ' '){
-        
-        
 
-        fetch('http://localhost:4444/concat', {
+        fetch('http://localhost:4444/concat/new', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -41,10 +39,14 @@ class Form extends Component{
         .then(res => {
           const resName = (res)
           console.log(resName)
+          const fullName = fname + ' ' + lname 
+          this.setState({
+              fullName : fullName
+          })
         } );
-
+        }
     }
-    }
+  
     render(){
         let showName
         if(this.state.fullName!==''){
